@@ -2,16 +2,16 @@ import React from "react";
 import { caculateWinner } from "../../Helpers";
 import Cell from "./Cell";
 
-const Board = () => {
-  const cells = [null, null, null, "x", "x", "x", null, null, null];
-  console.log(caculateWinner(cells));
+const Board = (props) => {
   return (
     <div className="game-board">
-      {Array(9)
-        .fill()
-        .map((item, index) => (
-          <Cell key={index}></Cell>
-        ))}
+      {props.cells.map((item, index) => (
+        <Cell
+          key={index}
+          value={item}
+          onclick={() => props.onClick(index)}
+        ></Cell>
+      ))}
     </div>
   );
 };
