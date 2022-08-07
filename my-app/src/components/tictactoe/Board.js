@@ -1,5 +1,5 @@
 import React from "react";
-import { caculateWinner } from "../../Helpers";
+// import { caculateWinner } from "../../Helpers";
 import Cell from "./Cell";
 
 const Board = (props) => {
@@ -9,7 +9,8 @@ const Board = (props) => {
         <Cell
           key={index}
           value={item}
-          onclick={() => props.onClick(index)}
+          onClick={() => props.onClick(index)}
+          className={item === "X" ? "is-x" : item === "O" ? "is-o" : ""}
         ></Cell>
       ))}
     </div>
