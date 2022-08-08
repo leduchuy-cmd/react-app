@@ -2,11 +2,32 @@
   margin: 25px;
   width: 200px;
   height: 200px;
-  border: 1px solid #ccc;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-gap: 25px;
 }
 .game-cell {
-  border: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.game-cell.is-x {
+  color: #2cccff;
+}
+.game-cell.is-o {
+  color: #ff6651;
+}
+.btn-reset {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #2cccff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
 }

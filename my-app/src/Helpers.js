@@ -16,4 +16,5 @@ export function caculateWinner(cells) {
       return cells[a];
     }
   }
+  return null;
 }
