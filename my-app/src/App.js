@@ -1,10 +1,12 @@
 import "./App.css";
+import GameD from "./components/demso/GameD";
 import Game from "./components/tictactoe/Game";
 
 function App() {
   return (
     <div>
-      <Game></Game>
+      {/* <Game></Game> */}
+      <GameD></GameD>
     </div>
   );
 }
