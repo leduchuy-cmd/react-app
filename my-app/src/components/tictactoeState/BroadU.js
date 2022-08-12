@@ -9,6 +9,7 @@ const BroadU = (props) => {
           key={index}
           value={item}
           onClick={() => props.onClick(index)}
+          className={item === "X" ? "is-x" : item === "O" ? "is-o" : ""}
         ></CellU>
       ))}
     </div>

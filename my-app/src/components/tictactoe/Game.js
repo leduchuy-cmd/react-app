@@ -12,7 +12,7 @@ const initialState = {
 const gameReducer = (state, action) => {
   switch (action.type) {
     case "CLICK": {
-      // console.log("it working");
+      // console.log("it is working");
       const { board, xIsNext } = state;
       const { index, winner } = action.payload;
 

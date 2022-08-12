@@ -1,13 +1,9 @@
 import "./App.css";
-// import GameD from "./components/demso/GameD";
-// import Game from "./components/tictactoe/Game";
-import GameU from "./components/tictactoeState/GameU";
-
+import Card from "./components/card/Card";
 function App() {
   return (
     <div>
-      {/* <Game></Game> */}
-      <GameU></GameU>
+      <Card></Card>
     </div>
   );
 }
