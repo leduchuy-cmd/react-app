@@ -78,21 +78,28 @@ const CardTitle = styled.h3`
 const CardAmount = styled.span`
   font-size: ${(props) => props.fontSize || "18px"};
   font-weight: bold;
-  background: linear-gradient(
-    86.88deg,
-    #7d6aff 1.38%,
-    #ffb86c 64.35%,
-    #fc2872 119.91%
-  );
+
   ${(props) =>
     props.secondary &&
     css`
-      background: linear-gradient(86.88deg, #eee, #fc2872);
+      background: linear-gradient(86.88deg, #20e3b2, #2cccff);
+    `};
+
+  ${(props) =>
+    !props.secondary &&
+    css`
+      background: linear-gradient(
+        86.88deg,
+        #7d6aff 1.38%,
+        #ffb86c 64.35%,
+        #fc2872 119.91%
+      );
     `};
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 `;
+
 const Card = (props) => {
   console.log(props);
   return (

@@ -41,7 +41,11 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.youtube-list {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .youtube-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
@@ -64,4 +68,4 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-}
+} */

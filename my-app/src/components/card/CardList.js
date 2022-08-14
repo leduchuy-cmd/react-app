@@ -5,7 +5,8 @@ const StyledCardList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 90px 30px;
-  background-color: rebeccapurple;
+  padding: 30px;
+  /* background-color: rebeccapurple; */
 `;
 
 const CardList = (props) => {
